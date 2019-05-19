@@ -3,12 +3,12 @@ package main
 import "fmt"
 
 //Swap element
-func swap(x, y *int32) {
+func swap(x, y *int64) {
 	*x, *y = *y, *x
 }
 
 //Insertion Sort
-func insertionSort(arr []int32) []int32 {
+func insertionSort(arr []int64) []int64 {
 	for unSortedIndex := 1; unSortedIndex < len(arr); unSortedIndex++ {
 		sortedIndex := unSortedIndex - 1
 		for arr[sortedIndex] > arr[unSortedIndex] {
@@ -24,7 +24,7 @@ func insertionSort(arr []int32) []int32 {
 }
 
 // Complete the miniMaxSum function below.
-func miniMaxSum(arr []int32) {
+func miniMaxSum(arr []int64) {
 
 	//Sorting the array
 	insertionSort(arr)
@@ -49,6 +49,6 @@ func miniMaxSum(arr []int32) {
 }
 
 func main() {
-	arr := []int32{7, 8974, 69, 2, 221}
+	arr := []int64{7, 8974, 69, 2, 221}
 	miniMaxSum(arr)
 }
