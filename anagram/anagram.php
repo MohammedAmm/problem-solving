@@ -56,4 +56,8 @@ function areAnagram(string $firstString, string $secondString):bool
     return true; 
 }
 
+//Failed
 print(areAnagram('silent', 'liste1N'));
+
+//Successed
+print(areAnagram('silent', 'listeN'));
